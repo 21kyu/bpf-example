@@ -1,6 +1,6 @@
 package main
 
-//go:generate go run github.com/cilium/ebpf/cmd/bpf2go -target bpfel -cc clang -type event bpf ./bpf/execve.bpf.c -- -I/usr/include/bpf -I./headers
+//go:generate go run github.com/cilium/ebpf/cmd/bpf2go -target bpfel -cc clang -type event bpf ./bpf/execve.c -- -I/usr/include/bpf -I./headers
 
 import (
 	"bytes"

@@ -24,6 +24,7 @@ struct event {
 	u8 comm[32];
 };
 
+// Force emitting struct event into the ELF.
 const struct event *unused __attribute__((unused));
 
 SEC("tracepoint/syscalls/sys_enter_execve")
